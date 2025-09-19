@@ -1,0 +1,95 @@
+/* ------------------- */
+/*  Estilos Generales  */
+/* ------------------- */
+* {
+  font-family: "Nunito Sans", sans-serif;
+  color: #00a8f4;
+}
+.centrar-texto {
+  text-align: center;
+}
+.texto-color-agp {
+  color: #00a8f4;
+}
+.texto-negrita {
+  font-weight: bold;
+}
+.texto-negro {
+  color: #000000;
+}
+
+/* ------------------- */
+/* ------ Header ----- */
+/* ------------------- */
+.index-header {
+  background-color: #f8f8f8;
+}
+.logotipo-header {
+  width: 16rem;
+  height: 6rem;
+  object-fit: cover;
+}
+.nav-header ul {
+  list-style: none;
+}
+.nav-header li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.nav-header li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.index-h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+/* ------------------- */
+/* ------- Main ------ */
+/* ------------------- */
+.card-intro {
+  background-color: #00a7f445;
+}
+.index-h2 {
+  font-size: 2rem;
+}
+.intro-img {
+  max-width: 30rem;
+  object-fit: cover;
+}
+.card-intro p {
+  font-size: 1.4rem;
+}
+.card-intro ul {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.card-clientes {
+  background-color: #f8f8f8;
+}
+.cliente-img {
+  width: 25rem;
+  object-fit: cover;
+}
+
+/* ------------------- */
+/* ----- Footer ------ */
+/* ------------------- */
+.footer-info {
+  background-color: #0075ff45;
+}
+.logotipo-footer {
+  width: 15rem;
+  height: 6rem;
+  object-fit: cover;
+}
+.footer-h4 {
+  font-size: 1.4rem;
+}
+.footer-info p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #000;
+}
