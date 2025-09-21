@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,122 +11,249 @@
       rel="stylesheet"
     />
     <!-- BOOTSTRAP -->
-     <link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- Titulo del Documento -->
     <title>Inicio | Clínica Dental AGP</title>
   </head>
   <body>
-    <header class="index-header">
-      <!-- Logo -->
-      <img
-        class="logotipo-header"
-        src="./img/common/logo.png"
-        alt="Logo Clínica Dental AGP"
-      />
 
-      <!-- Navegación -->
-      <nav class="nav-header">
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./pages/nosotros.html">Nosotros</a></li>
-          <li><a href="./pages/servicios.html">Servicios</a></li>
-          <li><a href="./pages/staff.html">Staff</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-dark position-fixed top-0 w-100 h-10 py-0"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              class="logotipo-header"
+              src="./img/common/logo.png"
+              alt="Logo Clínica Dental AGP"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fs-5 active fw-bold" href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="./pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="./pages/servicios.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="./pages/preguntas.html"
+                  >Staff</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="./pages/contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-
-      <!-- Titulo Principal -->
-      <h1 class="centrar-texto index-h1">Clínica Dental AGP</h1>
     </header>
 
     <main>
-      <!-- Contenido Principal: Introducción -->
-      <section class="card-intro">
-        <img
-          class="intro-img"
-          src="./img/inicio/imagenInicio.jpg"
-          alt="Imagen de bienvenida de Clíinica Dental AGP"
-        />
-        <h2 class="centrar-texto index-h2">¿Por qué elegirnos?</h2>
-        <p class="centrar-texto texto-negro">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          distinctio neque laborum, eos dolores rerum, sint vero ex quam
-          exercitationem molestias eius cum, quod recusandae voluptatibus
-          consequuntur obcaecati quos ullam?
-        </p>
-        <ul>
-          <li>Confianza</li>
-          <li>Seguridad</li>
-          <li>Flexibilidad</li>
-          <li>Mejores Especialistas</li>
-        </ul>
+      <!-- Introducción -->
+      <section
+        class="principal-container d-flex align-items-center justify-content-center"
+      >
+        <div class="text-center">
+          <h1 class="fw-bold text-white">Clínica Dental AGP</h1>
+          <p class="lead text-white text-opacity-75 fw-light mb-4">
+            Cuidamos tu sonrisa con la mejor tecnología y un equipo de expertos.
+          </p>
+          <a href="./pages/contacto.html" class="btn btn-primary btn-lg">
+            Agenda tu Cita
+          </a>
+        </div>
       </section>
+
+      <!-- Contenido Principal: ¿Por qué elegirnos? -->
+      <section class="bg-light py-4 py-lg-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img
+                src="./img/inicio/elegirnos.jpg"
+                class="img-fluid rounded shadow-sm"
+                alt="Interior de la Clínica Dental AGP"
+              />
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <h2 class="mb-3 text-center texto-color-agp">
+                ¿Por qué elegirnos?
+              </h2>
+              <p class="text-black mb-4 texto-justificado">
+                En Clínica Dental AGP, nos dedicamos a ofrecerte una atención
+                dental de calidad en un ambiente cómodo y profesional. Nuestro
+                equipo de especialistas está comprometido con tu salud bucal y
+                bienestar general.
+              </p>
+              <ul class="list-unstyled texto-color-agp">
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill me-2"></i>Confianza
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill me-2"></i>Seguridad
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill me-2"></i>Flexibilidad
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill me-2"></i>Mejores
+                  Especialistas
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Contenido Secundario: Clientes -->
-      <section class="card-clientes">
-        <h2 class="centrar-texto index-h2">Nuestros Clientes</h2>
+      <section class="py-5">
+        <div class="container">
+          <h3 class="text-center mb-5 fw-bold texto-color-agp">
+            Nuestros Clientes
+          </h3>
 
-        <img
-          class="cliente-img"
-          src="./img/inicio/inicioCliente1.png"
-          alt="Imagen de cliente 1"
-        />
+          <div class="row text-center">
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+              <img
+                src="./img/inicio/inicioCliente1.png"
+                class="img-fluid cliente-img"
+                alt="Logo Cliente 1"
+              />
+            </div>
 
-        <img
-          class="cliente-img"
-          src="./img/inicio/inicioCliente2.png"
-          alt="Imagen de cliente 2"
-        />
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+              <img
+                src="./img/inicio/inicioCliente2.png"
+                class="img-fluid cliente-img"
+                alt="Logo Cliente 2"
+              />
+            </div>
 
-        <img
-          class="cliente-img"
-          src="./img/inicio/inicioCliente3.png"
-          alt="Imagen de cliente 3"
-        />
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+              <img
+                src="./img/inicio/inicioCliente3.png"
+                class="img-fluid cliente-img"
+                alt="Logo Cliente 3"
+              />
+            </div>
 
-        <img
-          class="cliente-img"
-          src="./img/inicio/inicioCliente4.png"
-          alt="Imagen de cliente 4"
-        />
+            <div class="col-6 col-md-6 col-lg-3 mb-4">
+              <img
+                src="./img/inicio/inicioCliente4.png"
+                class="img-fluid cliente-img"
+                alt="Logo Cliente 4"
+              />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
-      <section class="footer-info">
-        <img
-          class="logotipo-footer"
-          src="./img/common/logo.png"
-          alt="Logo Clinica Dental AGP"
-        />
-        <div class="footer-horario">
-          <h4 class="centrar-texto footer-h4">Horario de Atención</h4>
-          <p class="texto-negrita">Lunes a Viernes:</p>
-          <p>09:00 a 19:00</p>
+      <div class="main-footer pb-2 pt-4 text-center">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-md-4">
+              <img
+                src="./img/common/logo.png"
+                alt="Logo Clínica Dental AGP"
+                class="logotipo-footer"
+              />
+              <p class="text-muted">
+                Clínica Dental especializada en el cuidado de tu sonrisa.
+              </p>
+            </div>
+
+            <div class="col-md-4 mt-3">
+              <h5 class="fw-bold text-uppercase texto-color-agp mb-3">Horarios de atención</h5>
+              <p class="text-muted fw-bold">
+                Atención Presencial y Telefónica
+              </p>
+              <p class="text-muted">
+                Lunes a Viernes:<br />
+                De 8:00 a 20:00 hrs.
+              </p>
+            </div>
+
+            <div class="col-md-4 mt-3">
+              <h5 class="fw-bold text-uppercase texto-color-agp mb-4">Contáctanos</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none footer-link"
+                  >
+                    <i class="bi bi-facebook me-2"></i>DentalAGP
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none footer-link"
+                  >
+                    <i class="bi bi-instagram me-2"></i>@DentalAGP
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none footer-link"
+                  >
+                    <i class="bi bi-geo-alt-fill me-2"></i>Av. La Marina 123, Lima
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="footer-contacto">
-          <h4 class="centrar-texto footer-h4">Contáctanos</h4>
-          <p>
-            <span class="texto-negrita texto-negro">Facebook:</span> Clinica
-            Dental AGP
-          </p>
-          <p>
-            <span class="texto-negrita texto-negro">Instagram:</span>
-            @ClinicaDentalAGP
-          </p>
-        </div>
-      </section>
-      <section class="footer-credits">
-        <p class="texto-negrita texto-negro">
-          © Dental AGP | Clinica Dental especializado | Todos los derechos
+      </div>
+
+      <div class="sub-footer bg-dark text-white-50 py-3">
+        <small>
+          © 2025 Dental AGP | Clínica Dental especializado | Todos los derechos
           reservados
-        </p>
-      </section>
+        </small>
+      </div>
     </footer>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

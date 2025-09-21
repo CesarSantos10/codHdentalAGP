@@ -3,93 +3,88 @@
 /* ------------------- */
 * {
   font-family: "Nunito Sans", sans-serif;
-  color: #00a8f4;
 }
-.centrar-texto {
-  text-align: center;
+body {
+  padding-top: 74px; 
 }
 .texto-color-agp {
   color: #00a8f4;
 }
-.texto-negrita {
-  font-weight: bold;
+.texto-justificado {
+  text-align: justify;
 }
-.texto-negro {
-  color: #000000;
+
+h1{
+  font-size: 2.3rem;
+}
+h2, h3{
+  font-size: 1.75rem;
 }
 
 /* ------------------- */
 /* ------ Header ----- */
 /* ------------------- */
-.index-header {
-  background-color: #f8f8f8;
+.navbar.position-fixed {
+  z-index: 1100;
 }
 .logotipo-header {
-  width: 16rem;
-  height: 6rem;
-  object-fit: cover;
+  height: 4rem;
+  object-fit: contain;
 }
-.nav-header ul {
-  list-style: none;
-}
-.nav-header li {
-  display: inline-block;
-  margin: 0 10px;
-}
-.nav-header li a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 2rem;
-}
-.index-h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-}
+
 
 /* ------------------- */
 /* ------- Main ------ */
 /* ------------------- */
-.card-intro {
-  background-color: #00a7f445;
-}
-.index-h2 {
-  font-size: 2rem;
-}
-.intro-img {
-  max-width: 30rem;
-  object-fit: cover;
-}
-.card-intro p {
-  font-size: 1.4rem;
-}
-.card-intro ul {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-.card-clientes {
-  background-color: #f8f8f8;
+.principal-container{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/inicio/imagenInicio.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 95vh;
+  width: 100%;
+  background-position: center;
 }
 .cliente-img {
-  width: 25rem;
   object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+.cliente-img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
 /* ------------------- */
 /* ----- Footer ------ */
 /* ------------------- */
-.footer-info {
-  background-color: #0075ff45;
+.main-footer {
+  background-color: #e7e8edbe;
+}
+.sub-footer {
+  text-align: center;
 }
 .logotipo-footer {
-  width: 15rem;
-  height: 6rem;
-  object-fit: cover;
+  max-width: 13.5rem;
+  object-fit: contain;
 }
-.footer-h4 {
-  font-size: 1.4rem;
+
+.main-footer .footer-link:hover {
+  color: #00a8f4; 
 }
-.footer-info p {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #000;
+
+/* -------------------------- */
+/* ----- Media Queries ------ */
+/* -------------------------- */
+@media only screen and (min-width: 768px) {
+h1{
+  font-size: 3.5rem;
+}
+h2, h3 {
+    font-size: 2.2rem; 
+  }
+.sub-footer {
+    text-align: left;
+  }
 }
