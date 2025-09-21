@@ -1,88 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- Titulo del Documento -->
-    <title>Servicios</title>
-</head>
+    <title>Servicios | Clínica Dental AGP</title>
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- Logo -->
-        <img class="logotipo-header" src="../img/common/logo.png" alt="Logo Clínica Dental AGP">
-        <!-- Navegación -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./staff.html">Staff</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+      <nav
+        class="navbar navbar-expand-lg bg-dark position-fixed top-0 w-100 h-10 py-0"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              class="logotipo-header"
+              src="../img/common/logo.png"
+              alt="Logo Clínica Dental AGP"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="./nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold active" href="./servicios.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="./preguntas.html"
+                  >Staff</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 fw-bold" href="./contacto.html"
+                  >Contacto</a
+                >
+              </li>
             </ul>
-        </nav>
-        <!-- Titulo Principal -->
-        <h1>Servicios</h1>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Contenido Principal -->
-        <section>
-            <div>
-                <div>
-                    <img src="../img/servicio/servicio1.png" alt="Nombre del Servicio 1">
-                </div>
-                <h4>Limpieza y mantenimiento dental</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas laborum commodi nobis, impedit ullam nesciunt, veniam, in sapiente doloremque </p>
-            </div>
-            <div>
-                <img src="../img/servicio/servicio2.png" alt="Nombre del Servicio 2">
-                <h4>Ortodoncia</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas laborum commodi nobis, impedit ullam nesciunt, veniam, in sapiente doloremque </p>
-            </div>
-            <div>
-                <img src="../img/servicio/servicio3.png" alt="Nombre del Servicio 3">
-                <h4>Implantes Dentales</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas laborum commodi nobis, impedit ullam nesciunt, veniam, in sapiente doloremque </p>
-            </div>
-            <div>
-                <img src="../img/servicio/servicio4.png" alt="Nombre del Servicio 4">
-                <h4>Extracciones y Curaciones</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas laborum commodi nobis, impedit ullam nesciunt, veniam, in sapiente doloremque </p>
-            </div>
-            <div>
-                <a href="./contacto.html"><button>Contáctanos</button></a>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <section class="footer-info">
-            <img class="logotipo-footer" src="../img/common/logo.png" alt="Logo Clinica Dental AGP">
-            <div class="footer-horario">
-                <h4 class="centrar-texto footer-h4">Horario de Atención</h4>
-                <p class="texto-negrita">Lunes a Viernes:</p>
-                <p>09:00 a 19:00</p>
-            </div>
-            <div class="footer-contacto">
-                <h4 class="centrar-texto footer-h4">Contáctanos</h4>
-                <p><span class="texto-negrita texto-negro">Facebook:</span> Clinica Dental AGP</p>
-                <p><span class="texto-negrita texto-negro">Instagram:</span> @ClinicaDentalAGP</p>
-            </div>
-        </section>
-        <section class="footer-credits">
-            <p class="texto-negrita texto-negro"> © Dental AGP | Clinica Dental especializado | Todos los derechos reservados</p>
-        </section>
-    </footer>
-</body>
+      <!-- Presentación -->
+      <section
+        class="presentation-container presentation-container-servicios d-flex align-items-center justify-content-center"
+      >
+        <div class="text-center">
+          <h1 class="fw-bold text-white">Nuestros Servicios</h1>
+          <p class="lead text-white text-opacity-75 fw-light mb-4">
+            Ofrecemos una amplia gama de tratamientos para cuidar de tu salud
+            bucal.
+          </p>
+        </div>
+      </section>
 
+      <!-- Contenido Principal: Servicios -->
+      <section class="bg-light py-5 py-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="card h-100 shadow">
+                <img
+                  src="../img/servicios/servicio-limpieza.png"
+                  class="card-img-top"
+                  alt="Limpieza Dental"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title texto-color-agp fw-bold">
+                    Limpieza Dental Profesional
+                  </h5>
+                  <p class="card-text text-muted">
+                    Eliminamos la placa y el sarro para mantener tus encías y
+                    dientes sanos, previniendo futuras enfermedades.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card h-100 shadow">
+                <img
+                  src="../img/servicios/servicio-blanqueamiento.jpg"
+                  class="card-img-top"
+                  alt="Blanqueamiento Dental"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title texto-color-agp fw-bold">
+                    Blanqueamiento Dental
+                  </h5>
+                  <p class="card-text text-muted">
+                    Devuelve el brillo natural a tu sonrisa con nuestros
+                    tratamientos de blanqueamiento seguros y efectivos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card h-100 shadow">
+                <img
+                  src="../img/servicios/servicio-ortodoncia.png"
+                  class="card-img-top"
+                  alt="Ortodoncia"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title texto-color-agp fw-bold">Ortodoncia</h5>
+                  <p class="card-text text-muted">
+                    Corregimos la alineación de tus dientes y la mordida con
+                    brackets tradicionales o alineadores invisibles.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card h-100 shadow">
+                <img
+                  src="../img/servicios/servicio-implantes.png"
+                  class="card-img-top"
+                  alt="Implantes Dentales"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title texto-color-agp fw-bold">
+                    Implantes Dentales
+                  </h5>
+                  <p class="card-text text-muted">
+                    Reemplazamos dientes perdidos con implantes de titanio que
+                    se ven y se sienten como dientes naturales.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Llamado a la acción -->
+      <section class="py-5 text-center">
+        <div class="container">
+          <h3 class="texto-color-agp fw-bold">
+            ¿Listo para transformar tu sonrisa?
+          </h3>
+          <p class="lead text-muted my-4">
+            Nuestro equipo está listo para asesorarte y encontrar el tratamiento
+            perfecto para ti.
+          </p>
+          <a href="./contacto.html" class="btn btn-primary btn-lg">
+            Contáctanos y Agenda tu Cita
+          </a>
+        </div>
+      </section>
+
+      <!-- Contenido Principal -->
+      <!-- <section>
+        <div>
+          <div>
+            <img
+              src="../img/servicios/servicio1.png"
+              alt="Nombre del Servicio 1"
+            />
+          </div>
+          <h4>Limpieza y mantenimiento dental</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            laborum commodi nobis, impedit ullam nesciunt, veniam, in sapiente
+            doloremque
+          </p>
+        </div>
+        <div>
+          <img
+            src="../img/servicios/servicio2.png"
+            alt="Nombre del Servicio 2"
+          />
+          <h4>Ortodoncia</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            laborum commodi nobis, impedit ullam nesciunt, veniam, in sapiente
+            doloremque
+          </p>
+        </div>
+        <div>
+          <img
+            src="../img/servicios/servicio3.png"
+            alt="Nombre del Servicio 3"
+          />
+          <h4>Implantes Dentales</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            laborum commodi nobis, impedit ullam nesciunt, veniam, in sapiente
+            doloremque
+          </p>
+        </div>
+        <div>
+          <img
+            src="../img/servicios/servicio4.png"
+            alt="Nombre del Servicio 4"
+          />
+          <h4>Extracciones y Curaciones</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            laborum commodi nobis, impedit ullam nesciunt, veniam, in sapiente
+            doloremque
+          </p>
+        </div>
+        <div>
+          <a href="./contacto.html"><button>Contáctanos</button></a>
+        </div>
+      </section> -->
+    </main>
+
+    <footer>
+      <div class="main-footer pb-2 pt-4 text-center">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-md-4">
+              <img
+                src="../img/common/logo.png"
+                alt="Logo Clínica Dental AGP"
+                class="logotipo-footer"
+              />
+              <p class="text-muted">
+                Clínica Dental especializada en el cuidado de tu sonrisa.
+              </p>
+            </div>
+
+            <div class="col-md-4 mt-3">
+              <h5 class="fw-bold text-uppercase texto-color-agp mb-3">
+                Horarios de atención
+              </h5>
+              <p class="text-muted fw-bold">Atención Presencial y Telefónica</p>
+              <p class="text-muted">
+                Lunes a Viernes:<br />
+                De 8:00 a 20:00 hrs.
+              </p>
+            </div>
+
+            <div class="col-md-4 mt-3">
+              <h5 class="fw-bold text-uppercase texto-color-agp mb-4">
+                Contáctanos
+              </h5>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none footer-link"
+                  >
+                    <i class="bi bi-facebook me-2"></i>DentalAGP
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none footer-link"
+                  >
+                    <i class="bi bi-instagram me-2"></i>@DentalAGP
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-muted text-decoration-none footer-link"
+                  >
+                    <i class="bi bi-geo-alt-fill me-2"></i>Av. La Marina 123,
+                    Lima
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-footer bg-dark text-white-50 py-3">
+        <small>
+          © 2025 Dental AGP | Clínica Dental especializado | Todos los derechos
+          reservados
+        </small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -36,9 +36,7 @@ h2, h3{
 /* ------------------- */
 /* ------- Main ------ */
 /* ------------------- */
-.principal-container{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/inicio/imagenInicio.jpg);
+.presentation-container{
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,6 +44,17 @@ h2, h3{
   width: 100%;
   background-position: center;
 }
+.presentation-container-index{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/inicio/imagenInicio.jpg);
+}
+.presentation-container-servicios{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/servicios/presentacionServicios.jpg);
+  /* height: 80vh; */
+}
+
+/* Index */
 .cliente-img {
   object-fit: cover;
   filter: grayscale(100%);
@@ -54,6 +63,13 @@ h2, h3{
 .cliente-img:hover {
   filter: grayscale(0%);
   transform: scale(1.05);
+}
+/* Servicios */
+.card-img-top{
+  max-height: 17rem;
+  object-fit: cover;
+  /* quiero centrar la imagen */
+  content: center;
 }
 
 /* ------------------- */
