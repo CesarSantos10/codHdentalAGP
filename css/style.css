@@ -5,7 +5,7 @@
   font-family: "Nunito Sans", sans-serif;
 }
 body {
-  padding-top: 74px; 
+  padding-top: 74px;
 }
 .texto-color-agp {
   color: #00a8f4;
@@ -14,10 +14,11 @@ body {
   text-align: justify;
 }
 
-h1{
+h1 {
   font-size: 2.3rem;
 }
-h2, h3{
+h2,
+h3 {
   font-size: 1.75rem;
 }
 
@@ -32,11 +33,10 @@ h2, h3{
   object-fit: contain;
 }
 
-
 /* ------------------- */
 /* ------- Main ------ */
 /* ------------------- */
-.presentation-container{
+.presentation-container {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,11 +44,11 @@ h2, h3{
   width: 100%;
   background-position: center;
 }
-.presentation-container-index{
+.presentation-container-index {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/inicio/imagenInicio.jpg);
 }
-.presentation-container-servicios{
+.presentation-container-servicios {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/servicios/presentacionServicios.jpg);
   /* height: 80vh; */
@@ -65,10 +65,9 @@ h2, h3{
   transform: scale(1.05);
 }
 /* Servicios */
-.card-img-top{
+.card-img-top {
   max-height: 17rem;
   object-fit: cover;
-  /* quiero centrar la imagen */
   content: center;
 }
 
@@ -86,21 +85,22 @@ h2, h3{
   object-fit: contain;
 }
 
-.main-footer .footer-link:hover {
-  color: #00a8f4; 
+footer .main-footer a.footer-link:hover {
+  color: #00a8f4 !important;  /* Intenté usar el color sin el !important, pero no funcionó aparentemente es por la clase text-muted */
 }
 
 /* -------------------------- */
 /* ----- Media Queries ------ */
 /* -------------------------- */
 @media only screen and (min-width: 768px) {
-h1{
-  font-size: 3.5rem;
-}
-h2, h3 {
-    font-size: 2.2rem; 
+  h1 {
+    font-size: 3.5rem;
   }
-.sub-footer {
+  h2,
+  h3 {
+    font-size: 2.2rem;
+  }
+  .sub-footer {
     text-align: left;
   }
 }
